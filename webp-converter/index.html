@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebP Forge — Image to WebP Converter</title>
+  <meta name="description" content="Free client-side image to WebP converter. No uploads. No data stored. Built by Rahul Thombare." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">WebP<strong>Forge</strong></span>
+      </div>
+      <p class="tagline">Drop any image. Get WebP. Instantly.</p>
+    </div>
+    <nav class="header-nav">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Drop Zone -->
+    <section class="drop-zone" id="dropZone">
+      <div class="drop-inner">
+        <div class="drop-icon">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="14" width="40" height="30" rx="3" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M6 30l10-10 8 8 8-12 14 16" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <circle cx="16" cy="22" r="3" fill="currentColor"/>
+            <path d="M26 6v12M22 10l4-4 4 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="drop-label">Drag &amp; drop images here</p>
+        <p class="drop-sub">PNG · JPG · GIF · BMP · TIFF · AVIF · SVG</p>
+        <!-- FIX: label[for] handles the click — no JS needed, no conflict -->
+        <label class="btn-browse" for="fileInput">Browse Files</label>
+        <input type="file" id="fileInput" accept="image/*" multiple hidden />
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls-bar" id="controlsBar">
+      <div class="control-group">
+        <label for="quality">Quality</label>
+        <div class="slider-row">
+          <input type="range" id="quality" min="10" max="100" value="85" />
+          <span class="quality-val" id="qualityVal">85</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label>Output Format</label>
+        <div class="format-badge">WebP</div>
+      </div>
+      <button class="btn-convert" id="convertAll" disabled>Convert All</button>
+    </section>
+
+    <!-- Results -->
+    <section class="results" id="results"></section>
+
+    <!-- Download All -->
+    <div class="download-all-wrap" id="downloadAllWrap" style="display:none;">
+      <button class="btn-download-all" id="downloadAll">⬇ Download All as ZIP</button>
+      <p class="size-saved" id="sizeSaved"></p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-privacy">🔒 100% client-side · images never leave your browser · zero data stored</p>
+      <p class="footer-credit">Built by <strong>Rahul Thombare</strong> · © 2025 WebP Forge · <a href="privacy.html">Privacy</a> · <a href="legal.html">Legal</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

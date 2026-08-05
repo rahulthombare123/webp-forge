@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — WebP Forge</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="legal.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">WebP<strong>Forge</strong></span>
+        </a>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html">← Back to Converter</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </header>
+
+  <div class="legal-page">
+    <div class="legal-hero">
+      <span class="legal-tag">Privacy Policy</span>
+      <h1>Your Data Stays With You.<br>Always.</h1>
+      <p class="legal-lead">WebP Forge was built with a single privacy principle: <strong>we never see your images</strong>. Here's exactly how that works.</p>
+      <p class="legal-date">Last updated: June 2025 · Created by Rahul Thombare</p>
+    </div>
+
+    <div class="legal-body">
+
+      <div class="policy-card highlight-card">
+        <div class="policy-icon">🔒</div>
+        <div>
+          <h2>The Short Version</h2>
+          <p>WebP Forge converts images entirely inside your browser using the Canvas API. <strong>No image data, file names, or any user content is ever sent to a server, stored in a database, logged, or shared with anyone — including us.</strong></p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <h2>1. What Data We Collect</h2>
+        <p><strong>None.</strong> This tool is 100% client-side. When you drop or browse an image:</p>
+        <ul>
+          <li>The file is read locally by your browser using the <code>FileReader API</code></li>
+          <li>It is drawn to an in-memory <code>&lt;canvas&gt;</code> element</li>
+          <li>The WebP blob is generated locally via <code>canvas.toBlob()</code></li>
+          <li>The file is downloaded directly to your device</li>
+          <li>No data leaves your browser at any point in this process</li>
+        </ul>
+      </div>
+
+      <div class="policy-card">
+        <h2>2. Cookies & Local Storage</h2>
+        <p>WebP Forge does <strong>not</strong> use cookies, localStorage, sessionStorage, IndexedDB, or any browser storage mechanism to persist your data or identify you between visits.</p>
+        <p>When you close the tab, everything is gone. Nothing is retained.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>3. Third-Party Services</h2>
+        <p>The only external resource loaded is <strong>JSZip</strong> from <code>cdnjs.cloudflare.com</code>, and only when you click "Download All as ZIP". This is a JavaScript library — it does not receive your images in any form.</p>
+        <p>Google Fonts are loaded for typography. Google may log the request (as with any CDN), but no image data is involved.</p>
+        <p>We do not use analytics, tracking pixels, advertising scripts, or any third-party data collection of any kind.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>4. Server Logs</h2>
+        <p>If you host WebP Forge on a web server, your server may log standard HTTP request metadata (IP address, browser type, page visited). This is standard web server behavior unrelated to this tool. Image files themselves are never sent to the server.</p>
+        <p>If you open <code>index.html</code> directly from your file system (<code>file://</code>), there are zero network requests other than Google Fonts and JSZip on demand.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>5. Children's Privacy</h2>
+        <p>WebP Forge is a developer utility tool. We do not knowingly collect any information from anyone, including minors. Since no data is collected at all, there is nothing to disclose here beyond confirming that fact.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>6. Changes to This Policy</h2>
+        <p>If the tool ever changes in a way that affects data handling, this page will be updated with a new "Last updated" date. The core principle — no data collection — will not change without explicit, prominent notice.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>7. Contact</h2>
+        <p>Questions about privacy? Reach the creator:</p>
+        <p><strong>Rahul Thombare</strong><br/>
+        GitHub: <a href="https://github.com/rahulthombare123" target="_blank" rel="noopener">github.com/rahulthombare123</a><br/>
+        Location: Pimpri-Chinchwad (PCMC), Pune, Maharashtra, India</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-privacy">🔒 100% client-side · images never leave your browser · zero data stored</p>
+      <p class="footer-credit">Built by <strong>Rahul Thombare</strong> · © 2025 WebP Forge · <a href="privacy.html">Privacy</a> · <a href="legal.html">Legal</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,6 +1,7 @@
 # ⬡ WebP Forge — Image to WebP Converter
 
 **Created by Rahul Thombare** · © 2025 · MIT License
+<img width="1907" height="780" alt="Screenshot 2026-08-05 173547" src="https://github.com/user-attachments/assets/27c983ed-af94-42e5-8b2c-dac250fecbc1" />
 
 A fully client-side image converter that transforms any image (PNG, JPG, GIF, BMP, TIFF, AVIF, SVG etc.) into WebP format — with adjustable quality, live size comparison, individual downloads, and bulk ZIP export.
 
@@ -100,5 +101,5 @@ Also fixed:
 ## Creator
 
 **Rahul Thombare**  
-Frontend Developer · MCA Graduate · Pimpri-Chinchwad (PCMC), Pune, Maharashtra  
+Frontend Developer · 
 GitHub: [github.com/rahulthombare123](https://github.com/rahulthombare123)
